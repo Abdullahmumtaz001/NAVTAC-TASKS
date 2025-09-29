@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GentStyle - Online Gents Tailoring</title>
+  <link rel="stylesheet" href="./css/style.css" />
+
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script src="./react-lib/react.development.js"></script>
+    <script src="./react-lib/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+    
+      function Header() {
+        return (
+          <header>
+            <div className="logo">GentStyle</div>
+            <nav>
+              <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how">How It Works</a></li>
+                <li><a href="#measurement">Measurements</a></li>
+                <li><a href="#fabric">Fabrics</a></li>
+              </ul>
+            </nav>
+            <a href="#measurement" className="cta">Book Now</a>
+          </header>
+        );
+      }
+
+function Hero() {
+        return (
+          <section className="hero">
+            <div className="hero-text">
+              <h1>Perfect Fit for Every Gentleman</h1>
+              <p>
+                Custom stitching for Kurta, Shalwar Kameez, Shirts, Pajama & Trousers
+              </p>
+              <a href="#fabric" className="btn">Choose Fabric</a>
+            </div>
+          </section>
+        );
+      }
+
+      
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<div>   <Header /> <Hero />   </div>) ;
+    </script>
+  </body>
+</html>
